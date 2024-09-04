@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script>
+        var h1DomElement = React.createElement("h1", null, "React Js");
+        var pDomElement = React.createElement("p", null, "This is paragraph");
+        var ImgDomElement = React.createElement("img", {
+            src : "https://th.bing.com/th/id/OIP.h83or4KMmm2GU6k5DfDzfQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+            width : "400px",
+            height : "400px",
+        });
+
+        // ReactDOM.render(h1DomElement, document.getElementById("root"));
+        ReactDOM.render([h1DomElement, pDomElement, ImgDomElement], document.getElementById("root"));
+        // ReactDOM.render(ImgDomElement);
+
+    </script>
+</body>
+</html>

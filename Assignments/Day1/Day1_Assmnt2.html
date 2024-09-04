@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Certifications from Indian Agile Board</h1>
+
+    <script>
+
+        function createHeadElement(text){
+
+            var head = document.createElement("h3");
+            head.innerText = text;
+            head.style.color = "blue";
+            head.style.fontSize = "20px";
+            head.style.margin = "10px";
+
+            return head;
+        }
+        
+        var h3Element = createHeadElement("Scrum Master");
+        var h3Element1 = createHeadElement("Scrum Master");
+        var h3Element2 = createHeadElement("Scrum Master");
+        var h3Element3 = createHeadElement("Scrum Master");
+         
+       var img1 = document.createElement("img");
+       img1.src = 'https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.17.22-PM.jpeg.webp';
+       img1.style.width = "280px";
+       img1.style.height = "150px";
+
+       var img2 = document.createElement("img");
+       img2.src = 'https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.17.22-PM.jpeg.webp';
+       img2.style.width = "280px";
+       img2.style.height = "150px";
+
+       var img3 = document.createElement("img");
+       img3.src = 'https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.17.22-PM.jpeg.webp';
+       img3.style.width = "280px";
+       img3.style.height = "150px";
+
+       var img4 = document.createElement("img");
+       img4.src = 'https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.17.22-PM.jpeg.webp';
+       img4.style.width = "280px";
+       img4.style.height = "150px";
+
+       
+
+       var card1 = document.createElement("div");
+       card1.style.width = "280px";
+       card1.style.height = "200px";
+       card1.style.border = "1px solid black";
+       card1.appendChild(img1);
+       card1.appendChild(h3Element);
+
+       var card2 = document.createElement("div");
+       card2.style.width = "280px";
+       card2.style.height = "200px";
+       card2.style.border = "1px solid black";
+       card2.appendChild(img2);
+       card2.appendChild(h3Element1);
+
+       var card3 = document.createElement("div");   
+       card3.style.width = "280px";
+       card3.style.height = "200px";
+       card3.style.border = "1px solid black";
+       card3.appendChild(img3);
+       card3.appendChild(h3Element2);
+
+       var card4 = document.createElement("div");
+       card4.style.width = "280px";
+       card4.style.height = "200px";
+       card4.style.border = "1px solid black";
+       card4.appendChild(img4);
+       card4.appendChild(h3Element3);
+
+      
+
+
+       var container = document.createElement("div");
+       container.style.display = "flex";
+       container.style.justifyContent = "center";
+       container.style.gap = "50px"
+       container.appendChild(card1);
+       container.appendChild(card2);
+       container.appendChild(card3);
+       container.appendChild(card4);
+       
+       document.body.appendChild(container);
+       
+    </script>
+   
+</body>
+</html>

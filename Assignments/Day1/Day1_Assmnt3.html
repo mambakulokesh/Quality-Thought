@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading Elements React</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root">
+        
+    </div>
+    <script>
+        var head1 = React.createElement("h1" , null, "Heading 1");
+        var head2 = React.createElement("h2" , null, "Heading 2");
+        var head3 = React.createElement("h3" , null, "Heading 3");
+        var head4 = React.createElement("h4" , null, "Heading 4");
+        var head5 = React.createElement("h5" , null, "Heading 5");
+        var head6 = React.createElement("h6" , null, "Heading 6");
+        
+        
+        ReactDOM.render([head1, head2, head3, head4, head5, head6], document.getElementById('root'))
+    </script>
+</body>
+</html>

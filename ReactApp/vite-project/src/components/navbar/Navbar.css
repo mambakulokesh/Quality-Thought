@@ -1,0 +1,43 @@
+.navbar{
+    height: 70px;
+    background-color: black;
+    display: flex;
+}
+
+.title{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    width: 40%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.nextlinks{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.title h1{
+    color: white;
+}
+
+.links a,
+.nextlinks a{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.nextlinks a{
+    margin-right: 20px;
+}
+
+

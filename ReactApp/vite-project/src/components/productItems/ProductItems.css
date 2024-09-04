@@ -1,0 +1,19 @@
+.productItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 265px;
+  height: 70px;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.productItems P {
+  color: grey;
+  font-size: 0.7rem;
+}
+
+.productItems h3 {
+  font-size: 1.2rem;
+}

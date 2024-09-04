@@ -1,0 +1,46 @@
+.card{
+    width: 280px;
+    text-align: center;
+    background-color: #1c1f2b;
+    color: grey;
+    padding: 20px 0px;
+    /* box-shadow: 0 0 10px black; */
+    margin: 0px auto;
+    line-height: 1.5;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+
+.card::before{
+    filter: blur(2rem);
+    opacity: 0.5;
+}
+
+
+.card p i{
+    gap: 10px;
+    color: #FFD333;
+}
+.card-container{
+    /* width: 1310px; */
+    display: flex;
+    gap: 20px;
+    margin: 40px auto;
+    padding: 20px 40px;
+    /* background-color: black; */
+}

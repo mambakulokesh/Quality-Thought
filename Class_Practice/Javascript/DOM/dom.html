@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function changeImgtoReact(){
+            var img = document.querySelector('img');
+            img.src = "https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"
+            var text = document.querySelector('h1');
+            text.innerText = "React js"
+        }
+
+        function changeImgtoNode(){
+            var img = document.querySelector('img');
+            img.src = "https://innovationyourself.com/wp-content/uploads/2020/08/nodejs-logo.png"
+            var text = document.querySelector('h1');
+            text.innerText = "Node js"
+        }
+    </script>
+</head>
+<body>
+    <h1>React JS</h1>
+
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png" alt="" width="400px" height="400px">
+    <br>
+    <button onclick="changeImgtoReact()">React JS</button>
+    <button onclick="changeImgtoNode()">Node JS</button>
+</body>
+</html>

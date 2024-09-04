@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        .container{
+            width: 1200px;
+            background-color: black;
+            color: cornsilk;
+            margin: 30px auto;
+            padding: 10px;
+            box-shadow: 0 0 10px green;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createUI(title) {
+        return (
+          <div className="container">
+            <h2>{ title }</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              voluptas aliquid quisquam natus corrupti mollitia sit! Fugiat
+              veniam quod ipsa dicta, ad consectetur magni reiciendis, rem,
+              facilis ratione accusamus officiis!
+            </p>
+          </div>
+        );
+      }
+
+      function app(){
+        return (
+            <div>
+                {createUI("HTML")}
+                {createUI("CSS")}
+                {createUI("Javascript")}
+            </div>
+        )
+      }
+
+      ReactDOM.render(app(), document.getElementById('root'));
+    </script>
+  </body>
+</html>

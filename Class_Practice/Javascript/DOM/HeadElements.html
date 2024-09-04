@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function CreateHeadings(){
+            var head1 = document.createElement('h1');
+            head1.innerText = "This is Heading1";
+
+            var head2 = document.createElement('h2');
+            head2.innerText = "This is Heading2";
+
+            var head3 = document.createElement('h3');
+            head3.innerText = "This is Heading3";
+
+            var head4 = document.createElement('h4');
+            head4.innerText = "This is Heading4";
+
+            var head5 = document.createElement('h5');
+            head5.innerText = "This is Heading5";
+
+            var head6 = document.createElement('h6');
+            head6.innerText = "This is Heading6";
+
+            var bd = document.querySelector('body');
+            bd.appendChild(head1);
+            bd.appendChild(head2);
+            bd.appendChild(head3);
+            bd.appendChild(head4);
+            bd.appendChild(head5);
+            bd.appendChild(head6);
+        }
+    </script>
+    
+</head>
+<body>
+    <p>Create Heading Elements by using Javascript</p>
+    <button onclick="CreateHeadings()">Create Headings</button>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React QT Section</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    
+    <script>
+
+        var h1 = React.createElement('h1', {
+            style : {
+                textAlign : "center",
+            }}, "Our Certifications from Indian Agile Board")
+
+        var img = React.createElement('img', {
+            src : "https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.17.22-PM.jpeg.webp",
+            width : "280px",
+            height : "150px",
+            
+        });
+
+        var h3 = React.createElement('h3', {
+            style : {
+                textAlign : "center",
+                fontSize : "22px",
+                marginTop : "-4px",
+                padding : "10px",
+                backgroundColor : "lightgrey",
+            }
+        }, "Scrum Master");
+
+        var card1 = React.createElement('div', {
+            style : {
+                width : "280px",
+                height : "200px",
+                // border : "2px solid black",
+            }
+        }, [img, h3]);
+
+        var card2 = React.createElement('div',{
+            style : {
+                width : "280px",
+                height : "200px",
+                // border : "2px solid black",
+            }} , [img, h3]);
+        
+        var card3 = React.createElement('div',{
+            style : {
+                width : "280px",
+                height : "200px",
+                // border : "2px solid black",
+            }} , [img, h3]);
+        
+        var card4 = React.createElement('div',{
+            style : {
+                width : "280px",
+                height : "200px",
+                // border : "2px solid black",
+            }} , [img, h3]);
+
+        var container = React.createElement('div', {
+            style : {
+                display : "flex",
+                justifyContent : "center",
+                gap : "50px",
+
+            }
+        }, [card1, card2, card3, card4]);
+        
+
+        ReactDOM.render([h1,container], document.querySelector('body'));
+    </script>
+</body>
+</html>
