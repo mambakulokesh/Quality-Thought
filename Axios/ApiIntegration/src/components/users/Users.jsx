@@ -2,17 +2,18 @@ import "./Users.css";
 
 import { getUSer } from "../services/Service";
 import User from "../user/User";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+// import { useState, useEffect } from "react";
 
 function Users() {
   let [users, setUsers] = useState([]);
 
-  const [filteredUsers, setFilteredUsers] = useState([]);
-  const [gender, setGender] = useState("all"); 
+  // const [filteredUsers, setFilteredUsers] = useState([]);
+  // const [gender, setGender] = useState("all"); 
   
-  useEffect(() => {
-    getRequest();
-  }, []);
+  // useEffect(() => {
+  //   getRequest();
+  // }, []);
 
   const getRequest = ()=>{
 
@@ -22,7 +23,7 @@ function Users() {
     .then((users)=>{
       console.log(users.data.results)
       setUsers(users.data.results);
-      setFilteredUsers(users.data.results);
+      // setFilteredUsers(users.data.results);
     })
     .catch((error)=>{
       console.log(error);
@@ -30,16 +31,16 @@ function Users() {
     });
   }
 
-  const filterUsersByGender = (selectedGender) => {
-    setGender(selectedGender);
+  // const filterUsersByGender = (selectedGender) => {
+  //   setGender(selectedGender);
 
-    if (selectedGender === "all") {
-      setFilteredUsers(users); // Show all users
-    } else {
-      const filtered = users.filter((user) => user.gender === selectedGender);
-      setFilteredUsers(filtered);
-    }
-  };
+  //   if (selectedGender === "all") {
+  //     setFilteredUsers(users); // Show all users
+  //   } else {
+  //     const filtered = users.filter((user) => user.gender === selectedGender);
+  //     setFilteredUsers(filtered);
+  //   }
+  // };
 
 
   
@@ -61,8 +62,8 @@ function Users() {
             type="radio"
             name="gender"
             id="all"
-            onClick={() => filterUsersByGender("all")}
-            checked={gender === "all"}
+            // onClick={() => filterUsersByGender("all")}
+            // checked={gender === "all"}
           />
           <label htmlFor="all">All</label>
         </div>
@@ -72,8 +73,8 @@ function Users() {
             type="radio"
             name="gender"
             id="male"
-            onClick={() => filterUsersByGender("male")}
-            checked={gender === "male"}
+            // onClick={() => filterUsersByGender("male")}
+            // checked={gender === "male"}
           />
           <label htmlFor="male">Male</label>
         </div>
@@ -83,20 +84,23 @@ function Users() {
             type="radio"
             name="gender"
             id="female"
-            onClick={() => filterUsersByGender("female")}
-            checked={gender === "female"}
+            // onClick={() => filterUsersByGender("female")}
+            // checked={gender === "female"}
           />
           <label htmlFor="female">Female</label>
         </div>
       </div>
 
       <div className="cardContainer">
-        {/* {users.map((element, index) => {
+        
+        {users.map((element, index) => {
           return <User user={element} />;
-        })} */}
-        {filteredUsers.map((element, index) => (
+        })}
+
+
+        {/* {filteredUsers.map((element, index) => (
           <User key={index} user={element} />
-        ))}
+        ))} */}
       </div>
     </div>
   );

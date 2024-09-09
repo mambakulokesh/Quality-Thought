@@ -1,0 +1,60 @@
+.navbar{
+    height: 70px;
+    background-color: black;
+    display: flex;
+}
+
+.title{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextlinks{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.title h1{
+    color: white;
+}
+
+.links a,
+.nextlinks a{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: chocolate;
+}
+.nextlinks a:hover{
+    color: chocolate;
+}
+
+.nextlinks a{
+    margin-right: 20px;
+}
+
+.logout{
+    padding: 10px 15px;
+    background-color: grey;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logout:hover{
+    background-color: #CB80AB;
+}
+
