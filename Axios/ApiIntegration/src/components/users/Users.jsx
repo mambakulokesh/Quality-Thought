@@ -1,5 +1,4 @@
 import "./Users.css";
-
 import { getUSer } from "../services/Service";
 import User from "../user/User";
 import { useState } from "react";
